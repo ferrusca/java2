@@ -1,7 +1,6 @@
 <%-- 
     Document   : index.jsp
-    Created on : 6/10/2016, 03:21:15 PM
-    Author     : chicoterry
+    Author     : BombTeam
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

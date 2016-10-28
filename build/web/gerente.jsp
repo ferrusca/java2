@@ -21,10 +21,6 @@
             </select>
             <input type ='submit'/>
         </form>
-        <%
-            int eleccion = Integer.parseInt(request.getParameter("eleccion"));
-            if (eleccion == 1)
-                response.sendRedirect("logueoExitoso.jsp");
-                %>
+
     </body>
 </html>

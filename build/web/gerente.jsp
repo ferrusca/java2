@@ -1,11 +1,12 @@
 <%-- 
     Document   : gerente
     Created on : 25/10/2016, 02:57:25 PM
-    Author     : BombTeam
+    Author     : chicoterry
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -21,6 +22,7 @@
             </select>
             <input type ='submit'/>
         </form>
-        
     </body>
 </html>
+
+

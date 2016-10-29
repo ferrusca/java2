@@ -1,7 +1,7 @@
 <%-- 
     Document   : registro.jsp
     Created on : 6/10/2016, 04:24:47 PM
-    Author     : BombTeam
+    Author     : chicoterry
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -12,16 +12,7 @@
         <title>Registro de clientes</title>
     </head>
     <body>
-        <form method="post" action="registroControl.jsp">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            
+        <form method="post" action="registroControl.jsp"> 
             <center> 
                 Nombre: 
                 <input type="text" name="nombre"/>  <%-- agrega informacion en el formulario --%>
@@ -36,6 +27,5 @@
                 <input type="submit" value="Registrarse"/>
             </center>
         </form> <%-- peticion de tipo post(en background)--%>
-        <a href="registroControl.jsp">Registrarse ! </a>
     </body>
 </html>

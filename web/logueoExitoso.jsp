@@ -1,7 +1,7 @@
 <%-- 
     Document   : logueoExitoso.jsp
     Created on : 6/10/2016, 04:21:39 PM
-    Author     : BombTeam
+    Author     : chicoterry
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -12,6 +12,6 @@
         <title>Usuario</title>
     </head>
     <body>
-        <h1>Bienvenido</h1>
+        <h1>Bienvenido Usuario</h1>
     </body>
 </html>

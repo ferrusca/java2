@@ -1,7 +1,7 @@
 <%-- 
     Document   : registroControl.jsp
     Created on : 6/10/2016, 04:31:00 PM
-    Author     : BombTeam
+    Author     : chicoterry
 --%>
 
 <%@ page import ="java.sql.*"%>
@@ -20,7 +20,7 @@
     int i = st.executeUpdate("insert into cliente(nombre,apellido,username,password,telefono) values ('" + nombre + "','" + apellido + "','" + username + "','" + pwd + "','" + telefono + "');");
     
 if(i > 0){
-    response.sendRedirect("logueoExitoso.jsp");
+  out.write("Usuario añadido correctmente, regrese al <a href='index.jsp'>menu principal</a> para iniciar sesión"); 
 } else{
     response.sendRedirect("index.jsp");
 }

@@ -1,7 +1,7 @@
 <%-- 
     Document   : login.jsp
     Created on : 6/10/2016, 03:33:04 PM
-    Author     : BombTeam
+    Author     : chicoterry
 --%>
 
 <%-- administra la informacion enviada mediante post --%>
@@ -17,23 +17,22 @@
     Statement st = con.createStatement();
     ResultSet rs,rg;
     
-    rs = st.executeQuery("select * FROM menu WHERE platillo='"+username+"';");
-    rg = st.executeQuery("select * FROM gerentes WHERE username='"+username+"'and password='"+pwd+"';");
-    
-    /*if(rs.next()){
+    rs = st.executeQuery("select * FROM cliente WHERE username='"+username+"' and password='"+pwd+"';");
+    if (rs.next()){
         session.setAttribute("username", username); //se le agrega un ID a la sesion llamado username
         response.sendRedirect("logueoExitoso.jsp");
         
-    }*/ if(rg.next()){
-        session.setAttribute("username",username);
-        response.sendRedirect("gerente.jsp");
     } 
-    
     else{
-        //pasaremos a la parte de abajo
-        System.out.println("nada");
-        } %>
-        <%=
-        "Usuario incorrecto papá, <a href='index.jsp'> prueba de nuevo</a>" //redirecciona a index.jsp
-        %>
+        rg = st.executeQuery("select * FROM gerentes WHERE username='"+username+"'and password='"+pwd+"';");    
+            if(rg.next()){
+                session.setAttribute("username",username);
+                response.sendRedirect("gerente.jsp");
+            } else {
+                //FALTA LO DEL MESERO
+            }
+    }
+        //"Usuario incorrecto papá, <a href='index.jsp'> prueba de nuevo</a>" //redirecciona a index.jsp
+        
+%>
     

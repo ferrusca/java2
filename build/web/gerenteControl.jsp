@@ -1,9 +1,8 @@
 <%-- 
     Document   : gerenteControl
-    Created on : Oct 28, 2016, 10:21:21 PM
-    Author     : BombTeam
+    Created on : 28/10/2016, 07:30:55 PM
+    Author     : chicoterry
 --%>
-
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -21,9 +20,7 @@
             if (cadena == 1)
                 response.sendRedirect("gestionMesero.jsp");
             if (cadena == 2)
-                response.sendRedirect("gestionPlatillo.jsp");
-            
-                
+                response.sendRedirect("gestionPlatillo.jsp"); 
         %>
     </body>
 </html>

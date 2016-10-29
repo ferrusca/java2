@@ -15,9 +15,9 @@
     
     Class.forName("com.mysql.jdbc.Driver");
     
-    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cliente","root","");
+    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/prebefood","root","");
     Statement st = con.createStatement();
-    int i = st.executeUpdate("insert into cliente(nombre,apellido,username,password,telefono) values ('" + nombre + "','" + apellido + "','" + telefono + "','" + username + "','" + pwd + "');");
+    int i = st.executeUpdate("insert into cliente(nombre,apellido,username,password,telefono) values ('" + nombre + "','" + apellido + "','" + username + "','" + pwd + "','" + telefono + "');");
     
 if(i > 0){
     response.sendRedirect("logueoExitoso.jsp");

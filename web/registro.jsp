@@ -1,7 +1,7 @@
 <%-- 
     Document   : registro.jsp
     Created on : 6/10/2016, 04:24:47 PM
-    Author     : chicoterry
+    Author     : BombTeam
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -9,24 +9,33 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Registro de clientes</title>
     </head>
     <body>
         <form method="post" action="registroControl.jsp">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
             <center> 
                 Nombre: 
                 <input type="text" name="nombre"/>  <%-- agrega informacion en el formulario --%>
                 Apellido:
                 <input type="text" name="apellido"/>
-                correo:
-                <input type="text" name="correo"/>
                 Nombre Usuario: 
-                <input type="text" name="nameuser"/>  <%-- agrega informacion en el formulario --%>
+                <input type="text" name="username"/>  <%-- agrega informacion en el formulario --%>
                 Password:
-                <input type="password" name="pass"/>
+                <input type="password" name="password"/>
+                Telefono:
+                <input type="telefono" name="telefono"/>
                 <input type="submit" value="Registrarse"/>
             </center>
         </form> <%-- peticion de tipo post(en background)--%>
-        <a href="registro.jsp">Registrarse ! </a>
+        <a href="registroControl.jsp">Registrarse ! </a>
     </body>
 </html>

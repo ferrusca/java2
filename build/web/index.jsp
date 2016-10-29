@@ -11,7 +11,7 @@
         <title>Entrada</title>
     </head>
     <body>
-        <h1>Ingresa</h1>
+        <h1>Bienvenido al sistema PrebeFood</h1>
         <form method="post" action="login.jsp">
             <center> 
                 Nombre usuario: 
@@ -22,5 +22,6 @@
                 <input type="submit" value="mandalo !"/>
             </center>
         </form> <%-- peticion de tipo post(en background)--%>
+        <a href="registro.jsp">Registrarse</a>
     </body>
 </html>

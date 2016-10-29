@@ -1,7 +1,7 @@
 <%-- 
     Document   : login.jsp
     Created on : 6/10/2016, 03:33:04 PM
-    Author     : chicoterry
+    Author     : BombTeam
 --%>
 
 <%-- administra la informacion enviada mediante post --%>
@@ -19,6 +19,7 @@
     
     rs = st.executeQuery("select * FROM menu WHERE platillo='"+username+"';");
     rg = st.executeQuery("select * FROM gerentes WHERE username='"+username+"'and password='"+pwd+"';");
+    
     /*if(rs.next()){
         session.setAttribute("username", username); //se le agrega un ID a la sesion llamado username
         response.sendRedirect("logueoExitoso.jsp");

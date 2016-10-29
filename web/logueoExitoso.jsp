@@ -1,7 +1,7 @@
 <%-- 
     Document   : logueoExitoso.jsp
     Created on : 6/10/2016, 04:21:39 PM
-    Author     : chicoterry
+    Author     : BombTeam
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
